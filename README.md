@@ -134,6 +134,5 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 
 You can view RESTful API as human readable structured documentation with swagger UI by using following link
 in web browser
-    ```
+
     ['http://localhost:8080/swagger-ui.html'](http://localhost:8080/swagger-ui.html)
-    ```
