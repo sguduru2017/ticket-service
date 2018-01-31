@@ -1,13 +1,13 @@
 # Simple Ticket Service
 
-A Simple ticket service implementation to temporary hold seats on behalf of customer and final reservation of seats within a high demand performance venue.
+A Simple ticket service implementation to hold seats on behalf of customer and final reservation of seats within a high demand performance venue.
 
 ## Assumptions
 
  * Venue capacity is fixed before the service starts hold and reservations
  * A fixed hold interval duration at which all the temporary holds expire
  * SeatHold guarantees the number of seats committed if reserved before the hold time interval expires
- * Multiple holds can be made usig same customer email
+ * Multiple holds can be made using same customer email
  
  
 
@@ -23,7 +23,7 @@ A Simple ticket service implementation to temporary hold seats on behalf of cust
 
 1. Bootstrap project using spring initializer
    
-   Launch spring initializer (start.spring.ip) and create Group and artifact with the following dependencies
+   Launch spring initializer ([`start.spring.io`])(https://start.spring.io/) and create Group and artifact with the following dependencies
       (a) Web
       (b) Actuator
       (c) DevTool
@@ -63,16 +63,17 @@ A Simple ticket service implementation to temporary hold seats on behalf of cust
     ```
    POST - http://localhost:8080/ticketservice/holdseats
    ```
+   with JSON request body:
+   
    ```
-   with JSON request:
    {
      "numSeats": 5,
      "customerEmail": "noname@gmail.com"
    }
    ```
-   ```
    and response received contains the hold ID which can be later used to reserve seats
    
+   ```   
    {
     "numSeats": 5,
     "seatHoldId": 1,
@@ -93,7 +94,10 @@ A Simple ticket service implementation to temporary hold seats on behalf of cust
 3. Reserve the hold seats committed for the customer
     ```
    POST - http://localhost:8080/ticketservice/reserveseats
-   with JSON request:
+    ```
+
+   with JSON request body:
+    ```
    {
       "seatHoldId": 1,
       "customerEmail": "noname@gmail.com"
@@ -108,13 +112,11 @@ A Simple ticket service implementation to temporary hold seats on behalf of cust
 
 # Running JUnit tests
 
-1. RUn the following command to run the tests.
+1. Run the following command to run the tests.
 
     ```
     mvn clean test
-    ```
-    
-    ```
+
     Results :
 
     Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
