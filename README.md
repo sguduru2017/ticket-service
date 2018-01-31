@@ -39,11 +39,18 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 # Building the Project
 
     1. Clone the project
-       git clone https://github.com/sguduru/ticket-service.git
+       # git clone https://github.com/sguduru/ticket-service.git
+       
     2. Make JAVA_HOME is set to jdk 1.8 when building the application using command line
-    3. cd ticket-service
-    4. mvn install -Dmaven.test.skip=true
-    5. mvn spring-boot:run (to test using postman or curl)
+    
+    3. Go to the project directory
+       # cd ticket-service
+       
+    4. Run mvn to build the project
+       # mvn install -Dmaven.test.skip=true
+       
+    5. Start the application
+       # mvn spring-boot:run (to test using postman or curl)
     
 # Test using Postman or Curl
 
