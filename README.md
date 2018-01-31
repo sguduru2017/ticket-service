@@ -39,7 +39,7 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 # Building the Project
 
     1. Clone the project
-       got clone https://github.com/sguduru/ticket-service.git
+       git clone https://github.com/sguduru/ticket-service.git
     2. Make JAVA_HOME is set to jdk 1.8 when building the application using command line
     3. cd ticket-service
     4. mvn install -Dmaven.test.skip=true
