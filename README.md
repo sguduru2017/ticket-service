@@ -24,9 +24,9 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 1. Bootstrap project using spring initializer
    
    Launch spring initializer [`start.spring.io`](https://start.spring.io/) and create Group and artifact with the following dependencies
-      (a) Web
-      (b) Actuator
-      (c) DevTool
+      * Web
+      * Actuator
+      * DevTool
        
    Additionally springfox dependency needs to be added to pom.xml manually to generate the REST API
        
