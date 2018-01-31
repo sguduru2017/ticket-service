@@ -11,7 +11,7 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
  
  
 
-## Development environment/tools
+## Development environment
 
     Java 1.8+
     Maven 3.0+ as build tool
@@ -23,7 +23,7 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 
 1. Bootstrap project using spring initializer
    
-   Launch spring initializer ([`start.spring.io`])(https://start.spring.io/) and create Group and artifact with the following dependencies
+   Launch spring initializer [`start.spring.io`](https://start.spring.io/) and create Group and artifact with the following dependencies
       (a) Web
       (b) Actuator
       (c) DevTool
@@ -134,6 +134,7 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
 
 You can view RESTful API as human readable structured documentation with swagger UI by using following link
 in web browser
-
+    ```
     [`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html) 
-        
+    ```
+    
