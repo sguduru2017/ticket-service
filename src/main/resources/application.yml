@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+venue:
+  capacity: 45
+  expireinterval: 60
