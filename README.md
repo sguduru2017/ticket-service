@@ -51,7 +51,7 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
        # mvn install -Dmaven.test.skip=true
        
     5. Start the application
-       # mvn spring-boot:run (to test using postman or curl)
+       # mvn spring-boot:run
     
 # Test using Postman or Curl
 
