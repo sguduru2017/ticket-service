@@ -28,11 +28,12 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
       * Actuator
       * DevTool
        
-   Additionally springfox dependency needs to be added to pom.xml manually to generate the REST API
+   Edit the pom.xml and manually add springfox dependency to generate the REST API Documentation
        
-2. Implemented business service "TicketServiceImpl" with interface provided - TicketService
+2. Implement business service "TicketServiceImpl"
 
 3. Implement the API using TicketServiceController (GET and POST methods to hold/reserve seats)
+
 4. Write JUnit tests for validating the API
 
 
