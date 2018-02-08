@@ -53,6 +53,8 @@ A Simple ticket service implementation to hold seats on behalf of customer and f
     5. Start the application
        # mvn spring-boot:run
     
+        [The venue size and the number of seconds to hold the seats can be configured in application.yml]
+        
 # Test using Postman or Curl
 
 1. Find number of seats offered/available by the Venue.
